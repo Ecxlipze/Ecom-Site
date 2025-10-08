@@ -65,3 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
       wrap: true
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const exploreCarousel = document.querySelector('#exploreCarousel');
+    new bootstrap.Carousel(exploreCarousel, {
+      interval: false,
+      ride: false,
+      wrap: true
+    });
+  });
+

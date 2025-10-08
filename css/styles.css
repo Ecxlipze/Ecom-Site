@@ -391,3 +391,182 @@
   transform: scale(1.02);
   filter: brightness(0.95);
 }
+
+/* === EXPLORE PRODUCTS === */
+.explore-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.explore-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.explore-card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.explore-card .btn-add {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.explore-card:hover .btn-add {
+  display: block;
+}
+
+/* Wishlist icons same as previous sections */
+.wishlist-icons {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+}
+.wishlist-icons i {
+  font-size: 0.9rem;
+  background: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+.wishlist-icons i:hover {
+  background-color: #db4444;
+  color: #fff;
+  border-color: #db4444;
+}
+
+/* "NEW" badge */
+.badge-new {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #00ff90;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Color dots */
+.color-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 5px;
+}
+.color-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.color-dots span.black { background: #000; }
+.color-dots span.red { background: #db4444; }
+.color-dots span.green { background: #00ff90; }
+.carousel-item .row.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+/* === RESPONSIVE PRODUCT GRID FOR EXPLORE SECTION === */
+
+/* Default: 2 rows per slide */
+.carousel-item .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* For smaller screens: show only 1 row */
+@media (max-width: 767.98px) {
+  #exploreCarousel .carousel-item .row:nth-of-type(2) {
+    display: none !important;
+  }
+}
+
+/* Adjust card spacing on mobile */
+@media (max-width: 575.98px) {
+  .explore-card {
+    margin-bottom: 1rem;
+  }
+}
+/* === NEW ARRIVAL SECTION === */
+.arrival-card {
+  height: 100%;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+.arrival-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.arrival-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+.arrival-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767.98px) {
+  .arrival-overlay {
+    bottom: 10px;
+    left: 10px;
+  }
+  .arrival-overlay h5 {
+    font-size: 1rem;
+  }
+  .arrival-overlay p {
+    font-size: 0.8rem;
+  }
+}
+
+/* === SERVICE INFO SECTION === */
+.service-info-section {
+  background-color: #fff;
+}
+
+.service-item {
+  text-align: center;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper i {
+  color: #000;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .icon-wrapper {
+  background-color: #000;
+}
+
+.service-item:hover .icon-wrapper i {
+  color: #fff;
+  transform: scale(1.1);
+}
+
