@@ -569,4 +569,128 @@
   color: #fff;
   transform: scale(1.1);
 }
+/* === FOOTER === */
+.footer {
+  background-color: #000 !important;
+  color: #fff;
+  font-size: 0.95rem;
+}
 
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .subscribe-form input::placeholder {
+  color: #bbb;
+}
+
+.footer .social-icons a {
+  color: #ccc;
+  margin-right: 12px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #fff;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer hr {
+  opacity: 0.2;
+}
+
+
+
+
+/* === SIGN UP PAGE === */
+.signup-section {
+  background-color: #fff;
+}
+
+.signup-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.signup-form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.signup-form input:focus {
+  box-shadow: none;
+  border-color: #dc3545 !important;
+}
+
+.signup-form .btn-danger {
+  background-color: #db4444;
+  border: none;
+}
+
+.signup-form .btn-outline-secondary {
+  border-color: #ddd;
+  color: #333;
+}
+
+.signup-form .btn-outline-secondary:hover {
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 767.98px) {
+  .signup-form {
+    padding-top: 2rem;
+  }
+}
+/* === LOGIN PAGE === */
+.login-section {
+  background-color: #fff;
+}
+
+.login-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.login-form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.login-form input:focus {
+  box-shadow: none;
+  border-color: #dc3545 !important;
+}
+
+.login-form .btn-danger {
+  background-color: #db4444;
+  border: none;
+}
+
+.login-form .btn-outline-secondary {
+  border-color: #ddd;
+  color: #333;
+}
+
+.login-form .btn-outline-secondary:hover {
+  background-color: #f7f7f7;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  .login-form {
+    padding-top: 2rem;
+  }
+}
