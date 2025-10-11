@@ -694,3 +694,128 @@
     padding-top: 2rem;
   }
 }
+
+
+/* === WISHLIST PRODUCT CARD === */
+
+/* Remove icon button */
+.wishlist-remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.wishlist-remove-btn:hover {
+  background: #db4444;
+  color: #fff;
+}
+
+/* Discount tag (same as flash sale) */
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #db4444;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+/* Card hover effect (same as flash sale) */
+.flash-card {
+  background: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flash-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Section title bar */
+.red-bar {
+  width: 8px;
+  height: 24px;
+  background-color: #db4444;
+  border-radius: 4px;
+}
+/* === CONFIRMATION MODAL === */
+.modal-content {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.modal-content .fa-circle-check {
+  color: #28a745;
+}
+
+
+/* === CART PAGE === */
+.cart-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.quantity-select {
+  width: 70px;
+  text-align: center;
+}
+
+.cart-total-box {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.btn-danger {
+  background-color: #db4444;
+  border: none;
+}
+
+/* Confirmation Modal */
+.modal-content {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* === CHECKOUT PAGE === */
+.summary-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-summary {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.btn-danger {
+  background-color: #db4444;
+  border: none;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .checkout-section {
+    margin-top: 20px;
+  }
+  .order-summary {
+    margin-top: 30px;
+  }
+}
