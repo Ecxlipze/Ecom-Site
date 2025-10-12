@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — Home</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- header will be injected here -->
+  <div id="site-header"></div>
+<!-- ===== PRODUCT DETAIL PAGE ===== -->
+<section class="product-detail-section container my-5">
+
+    <!-- Breadcrumb -->
+    <div class="small text-muted mb-3">
+      <a href="index.html" class="text-decoration-none text-muted">Account</a> /
+      <a href="#" class="text-decoration-none text-muted">Gaming</a> /
+      <span class="text-dark">Havic HV G-92 Gamepad</span>
+    </div>
+  
+    <div class="row g-4">
+      <!-- Left Thumbnails -->
+      <div class="col-md-2 d-flex flex-column gap-3">
+        <img src="assets/images/gamepad1.jpg" class="img-fluid thumb active" alt="">
+        <img src="assets/images/gamepad2.jpg" class="img-fluid thumb" alt="">
+        <img src="assets/images/gamepad3.jpg" class="img-fluid thumb" alt="">
+        <img src="assets/images/gamepad4.jpg" class="img-fluid thumb" alt="">
+      </div>
+  
+      <!-- Main Image -->
+      <div class="col-md-5 text-center">
+        <img id="mainImage" src="assets/images/gamepad1.jpg" class="img-fluid rounded-3" alt="Gamepad">
+      </div>
+  
+      <!-- Product Info -->
+      <div class="col-md-5">
+        <h4 class="fw-bold mb-2" id="productName">Havic HV G-92 Gamepad</h4>
+        <div class="d-flex align-items-center mb-2">
+          <span class="text-warning small me-1">★★★★☆</span>
+          <small class="text-muted">(100 Reviews)</small>
+          <span class="text-success ms-3 small fw-semibold">In Stock</span>
+        </div>
+  
+        <h5 class="fw-bold mb-3 text-danger">$192.00</h5>
+        <p class="text-muted mb-3">
+          PlayStation 5 Controller Skin high quality vinyl with air channel adhesive for easy bubble free install.
+        </p>
+  
+        <!-- Colours -->
+        <div class="mb-3">
+          <strong>Colours:</strong>
+          <div class="d-inline-flex align-items-center gap-2 ms-2">
+            <span class="color-dot bg-dark"></span>
+            <span class="color-dot bg-danger"></span>
+          </div>
+        </div>
+  
+        <!-- Sizes -->
+        <div class="mb-3">
+          <strong>Size:</strong>
+          <div class="btn-group ms-2" role="group">
+            <button class="btn btn-outline-secondary btn-sm">XS</button>
+            <button class="btn btn-outline-secondary btn-sm">S</button>
+            <button class="btn btn-outline-secondary btn-sm active">M</button>
+            <button class="btn btn-outline-secondary btn-sm">L</button>
+            <button class="btn btn-outline-secondary btn-sm">XL</button>
+          </div>
+        </div>
+  
+        <!-- Quantity + Buttons -->
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="input-group" style="width:110px;">
+            <button class="btn btn-outline-dark" id="decrease">-</button>
+            <input type="text" class="form-control text-center" id="quantity" value="2">
+            <button class="btn btn-outline-dark" id="increase">+</button>
+          </div>
+          <button class="btn btn-danger px-4 py-2">Buy Now</button>
+          <button class="btn btn-outline-dark"><i class="fa-regular fa-heart"></i></button>
+        </div>
+  
+        <!-- Info Boxes -->
+        <div class="border rounded-2 p-3 mb-2 d-flex align-items-center gap-3">
+          <i class="fa-solid fa-truck fs-5 text-danger"></i>
+          <div>
+            <strong>Free Delivery</strong>
+            <p class="text-muted small mb-0">Enter your postal code for Delivery Availability</p>
+          </div>
+        </div>
+  
+        <div class="border rounded-2 p-3 d-flex align-items-center gap-3">
+          <i class="fa-solid fa-rotate-left fs-5 text-danger"></i>
+          <div>
+            <strong>Return Delivery</strong>
+            <p class="text-muted small mb-0">Free 30 Days Delivery Returns. Details</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== RELATED ITEMS ===== -->
+  <section class="related-products container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="d-flex align-items-center gap-2">
+        <div class="red-bar"></div>
+        <h6 class="text-danger mb-0">Related Item</h6>
+      </div>
+    </div>
+  
+    <div class="row g-4">
+        <!-- PRODUCT CARD 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="card flash-card h-100 position-relative border-0">
+              <span class="discount-tag">-40%</span>
+              <div class="wishlist-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <img src="assets/images/product1.jpg" class="card-img-top" alt="Gamepad">
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">HAVIT HV-G92 Gamepad</h6>
+                <div class="price mb-1">
+                  <span class="fw-bold text-danger">$120</span>
+                  <small class="text-muted text-decoration-line-through ms-1">$160</small>
+                </div>
+                <div class="stars text-warning small mb-2">★★★★☆ <span class="text-muted">(88)</span></div>
+                <button class="btn btn-dark w-100 btn-add">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT CARD 2 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card flash-card h-100 position-relative border-0">
+              <span class="discount-tag">-35%</span>
+              <div class="wishlist-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <img src="assets/images/product2.jpg" class="card-img-top" alt="Keyboard">
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">AK-900 Wired Keyboard</h6>
+                <div class="price mb-1">
+                  <span class="fw-bold text-danger">$960</span>
+                  <small class="text-muted text-decoration-line-through ms-1">$1160</small>
+                </div>
+                <div class="stars text-warning small mb-2">★★★★☆ <span class="text-muted">(75)</span></div>
+                <button class="btn btn-dark w-100 btn-add">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT CARD 3 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card flash-card h-100 position-relative border-0">
+              <span class="discount-tag">-30%</span>
+              <div class="wishlist-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <img src="assets/images/product3.jpg" class="card-img-top" alt="Monitor">
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">IPS LCD Gaming Monitor</h6>
+                <div class="price mb-1">
+                  <span class="fw-bold text-danger">$370</span>
+                  <small class="text-muted text-decoration-line-through ms-1">$400</small>
+                </div>
+                <div class="stars text-warning small mb-2">★★★★☆ <span class="text-muted">(99)</span></div>
+                <button class="btn btn-dark w-100 btn-add">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT CARD 4 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card flash-card h-100 position-relative border-0">
+              <span class="discount-tag">-25%</span>
+              <div class="wishlist-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <img src="assets/images/product4.jpg" class="card-img-top" alt="Chair">
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">S-Series Comfort Chair</h6>
+                <div class="price mb-1">
+                  <span class="fw-bold text-danger">$375</span>
+                  <small class="text-muted text-decoration-line-through ms-1">$400</small>
+                </div>
+                <div class="stars text-warning small mb-2">★★★★☆ <span class="text-muted">(99)</span></div>
+                <button class="btn btn-dark w-100 btn-add">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+ <!-- You can reuse your flash-sale product card structure here -->
+    </div>
+  </section>
+     
+
+  <!-- footer will be injected here -->
+  <div id="site-footer"></div>
+
+  <!-- shared components and scripts -->
+  <script src="js/components.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script>
+    const thumbs = document.querySelectorAll('.thumb');
+    const mainImage = document.getElementById('mainImage');
+    thumbs.forEach(t => {
+      t.addEventListener('click', () => {
+        thumbs.forEach(img => img.classList.remove('active'));
+        t.classList.add('active');
+        mainImage.src = t.src;
+      });
+    });
+    
+    document.getElementById('increase').onclick = () => {
+      let q = document.getElementById('quantity');
+      q.value = parseInt(q.value) + 1;
+    };
+    document.getElementById('decrease').onclick = () => {
+      let q = document.getElementById('quantity');
+      if (q.value > 1) q.value = parseInt(q.value) - 1;
+    };
+    </script>
+    
+</body>
+</html>
