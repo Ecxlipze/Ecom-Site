@@ -40,20 +40,47 @@ const topBar = `
             <input type="text" class="form-control border-end-0" placeholder="What are you looking for?" aria-label="Search">
             <button class="btn border-start-0 bg-white"><i class="fa-solid fa-magnifying-glass text-muted"></i></button>
           </div>
+<!-- HEADER RIGHT ICONS -->
+<div class="header-icons d-flex align-items-center gap-3">
 
-          <a href="wishlist.html" class="text-muted position-relative">
-            <i class="fa-regular fa-heart fa-lg"></i>
-            <span class="badge bg-danger rounded-pill wishlist-count position-absolute top-0 start-100 translate-middle">0</span>
-          </a>
+  <!-- Wishlist -->
+  <a href="wishlist.html" class="text-dark position-relative">
+    <i class="fa-regular fa-heart fs-5"></i>
+  </a>
 
-          <a href="cart.html" class="text-muted position-relative">
-            <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            <span class="badge bg-danger rounded-pill cart-count position-absolute top-0 start-100 translate-middle">0</span>
-          </a>
+  <!-- Cart -->
+  <a href="cart.html" class="text-dark position-relative">
+    <i class="fa-solid fa-cart-shopping fs-5"></i>
+    <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+  </a>
 
-          <a href="account.html" class="text-muted">
-            <i class="fa-regular fa-user fa-lg"></i>
-          </a>
+  <!-- Profile Dropdown -->
+  <div class="dropdown profile-dropdown">
+    <a href="#" class="text-dark dropdown-toggle d-flex align-items-center" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-regular fa-user fs-5"></i>
+    </a>
+
+    <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3 p-2" aria-labelledby="profileDropdown">
+      <li><a class="dropdown-item d-flex align-items-center gap-2" href="account.html">
+        <i class="fa-regular fa-user"></i> Manage Account
+      </a></li>
+      <li><a class="dropdown-item d-flex align-items-center gap-2" href="account.html">
+        <i class="fa-solid fa-box"></i> My Orders
+      </a></li>
+      <li><a class="dropdown-item d-flex align-items-center gap-2" href="account.html">
+        <i class="fa-solid fa-ban"></i> My Cancellations
+      </a></li>
+      <li><a class="dropdown-item d-flex align-items-center gap-2" href="account.html">
+        <i class="fa-regular fa-star"></i> My Reviews
+      </a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item d-flex align-items-center gap-2 text-danger" href="account.html">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+      </a></li>
+    </ul>
+  </div>
+
+</div>
         </div>
       </div>
     </div>

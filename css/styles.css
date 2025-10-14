@@ -909,12 +909,7 @@
     margin: 0 auto 10px;
   }
 }
-/* Hide sidebar on small screens */
-@media (max-width: 968px) {
-  .account-sidebar {
-    display: none;
-  }
-}
+
 /* === PRODUCT DETAIL PAGE === */
 .thumb {
   cursor: pointer;
@@ -947,4 +942,215 @@
   color: #fff;
   border-color: #db4444;
 }
+/* === ABOUT PAGE === */
+/* === STATS INFO SECTION === */
+.stats-info-section {
+  background-color: #fff;
+}
 
+.stat-item {
+  text-align: center;
+  padding: 25px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper i {
+  color: #000;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (same as your service section) */
+.stat-item:hover .icon-wrapper {
+  background-color: #000;
+}
+
+.stat-item:hover .icon-wrapper i {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Optional subtle box hover */
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .stat-item {
+    margin-bottom: 15px;
+  }
+}
+
+.team-card {
+  background: #fff;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.team-card img {
+  height: auto;
+  width: 100%;
+}
+.social-icons i {
+  font-size: 1rem;
+  margin: 0 6px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.social-icons i:hover {
+  color: #db4444;
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    margin-bottom: 10px;
+  }
+  .team-card img {
+    height: 220px;
+  }
+}
+
+/* === ACCOUNT PAGE === */
+.account-sidebar a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.account-sidebar a.active,
+.account-sidebar a:hover {
+  color: #db4444;
+  font-weight: 600;
+}
+
+.account-sidebar {
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.account-content input {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.account-content input:focus {
+  border-color: #db4444;
+  box-shadow: none;
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .account-sidebar {
+    text-align: center;
+  }
+  .account-sidebar a {
+    padding: 8px 0;
+  }
+}
+
+/* Smooth transition */
+.tab-content-item {
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.tab-content-item input[type="password"] {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.tab-content-item input[type="password"]:focus {
+  border-color: #db4444;
+  box-shadow: none;
+}
+
+.tab-content-item h6 {
+  font-size: 0.95rem;
+}
+/* === PROFILE DROPDOWN === */
+.profile-dropdown .dropdown-menu {
+  min-width: 200px;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.profile-dropdown .dropdown-item {
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.profile-dropdown .dropdown-item i {
+  color: #db4444;
+  width: 20px;
+  text-align: center;
+}
+
+.profile-dropdown .dropdown-item:hover {
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+.profile-dropdown .dropdown-item.text-danger i {
+  color: #d10024;
+}
+
+/* Dropdown fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* === 404 ERROR PAGE === */
+.error-page-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-page-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.error-page-section p {
+  font-size: 1rem;
+}
+
+.error-page-section .btn {
+  background-color: #db4444;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.error-page-section .btn:hover {
+  background-color: #000;
+  color: #fff;
+}

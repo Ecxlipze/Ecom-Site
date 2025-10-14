@@ -75,3 +75,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  const profileDropdown = document.querySelector('.profile-dropdown');
+
+  profileDropdown.addEventListener('mouseenter', () => {
+    const dropdown = new bootstrap.Dropdown(profileDropdown.querySelector('[data-bs-toggle="dropdown"]'));
+    dropdown.show();
+  });
+
+  profileDropdown.addEventListener('mouseleave', () => {
+    const dropdown = bootstrap.Dropdown.getInstance(profileDropdown.querySelector('[data-bs-toggle="dropdown"]'));
+    dropdown.hide();
+  });
+
