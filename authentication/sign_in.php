@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] === 'Post'){
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 $fName = $_POST['fname'];      
